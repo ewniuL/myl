@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+
+.main {
+  width: 100%;  /* Genişlik ayarı */
+  background-image: url(./images/arkaplan.jpg);   /* Arka plana resim ekledik*/
+  background-size: cover; /* Resmin tam sayfayı kaplamasını sağlar */
+  background-attachment: fixed;  /* Arka planın sabit kalmasını sağlar*/
+}
+
+/* Navbar ayarları */
+ul {
+  list-style-type: none; /* Liste ögelerinin başında gelen madde işaretlerini kaldırır*/
+  overflow: hidden; /* Bir içerik dışarı taşarsa, bu taşan kısmı gizlemek için kullanılır.*/
+  position: fixed; /* Navbar'ın ( Anasayfa, Tarihçe ...) sayfayı aşağıya indirdiğimizde sabit kalmasını sağlar*/ 
+  top: 0; /* Navbar'ı üstte olacak şekilde ayarlar */
+  width: 100%; /* Genişliği ayarlar*/
+  text-align: center; /* Yazıyı ortalamayı sağlar*/
+  background-color: black;
+  z-index: 1; /* Navbar'ın katman sırasında üste aldık*/
+ 
+}
+
+li {
+  display: inline-block;
+  height: 60px; /* Uzunluğu ayarlar*/
+}
+
+li a {
+  display: inline-block; 
+  color: white;
+  padding: 20px 30px; /* İç boşluğu ayarlar*/
+  text-decoration: none; /* A elementinin altındaki mavi çizgiyi kaldırır*/
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Yazı stilini yani Font türünü ayarlar*/
+  font-size: 25px; /* Yazının büyüklüğünü ayarlar*/
+}
+
+li a:hover {
+  background-color: rgb(167, 122, 167); /* Navbar'a mouse ile üzerine gelindiğinde üzerinde çıkan rengi düzenler*/
+}
+
+/* Navbar altındaki çizgi */
+.navbar-hr {
+
+  border: 1px solid white;  /* Çerçeve kalınlığını, şeklini, rengini değiştirilmesini sağlar*/
+  width: 100%; /* Genişliğini sayfayı kaplayacak şekilde ayarlar*/
+  position: fixed; /* Navbar'ın altındaki Çizginin sabit kalmasını sağlar*/
+  top: 60px; /* Navbar'ın konumunu ayarlar*/
+ 
+}
+
+/* İçerik alanı */
+.content {
+  padding: 2px; /* İç boşluğunu ayarlar*/
+  margin-top: 110px; /* Dış boşluğunu ayarlar*/
+  height: 890px; /* Yüksekliğini ayarlar*/
+  width: 100%; /* Genişliğini ayarlar*/
+  font-family: 'Muli', sans-serif; /* Yazı stilini yani Font türünü ayarlar*/
+  color: rgb(221, 205, 205);
+}
+
+.baslik {
+  font-size: 60px; /* Font büyüklüğünü ayarlar*/
+  text-align: center; /* Yazıyı ortalar*/
+  color: gainsboro; /* Renk */
+}
+
+.paragraf {
+  font-size: 22px; /* Font büyüklüğünü ayarlar*/
+  text-align: center; /* Yazıyı ortalar*/
+  padding: 10px; /* İç boşluğu düzenler*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Yazı stilini yani Font türünü ayarlar*/
+}
+
+.bayrak a img  {
+  width: 40px; /* Genişliği ayarlar*/
+  vertical-align: middle; /* Japonya bayrağını navbar'a ortalar*/
+}
+
+.bayrak-logo img {
+
+  height:250px;
+  width: 370px; /* Genişlik değeri*/
+  position: absolute;
+  left: 166px;
+  top: 50px;
+}
+
+.bayrak-logo{
+  height: 670px;
+  border: 3px solid white;
+  width: 720px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  background-color: #222;
+  
+}
+
+.paragraf2 {
+ 
+  width: 650px; /* Genişlik*/
+  font-size: 15px; /* Font büyüklüğünü düzenler*/
+  text-align: center; /* Yazıyı ortalar*/
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 569px;
+  left: 138px;
+  
+}
+
+.tarihcebg {
+ 
+  background-color: rgb(7, 7, 32);
+}
+
+
+.baslik2 {
+   
+    font-size: 40px; /* Font büyüklüğünü ayarlar */
+    text-align: center; /* Yazıyı ortalar */
+    color: rgb(248, 141, 54); /* Renk */
+    margin-top: 100px; /* Üstten boşluk */  
+    padding-bottom:7px;
+
+
+}
+
+.paragraf3{
+  position: absolute;
+  right: 167px;
+  width: 380px; /* Genişlik*/
+  top: 307px;
+  font-size: 19px; /* Font büyüklüğünü düzenler*/
+  text-align: center; /* Yazıyı ortalar*/
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+
+}
+
+.tarihce-resim1{
+  height: 670px;
+  border: 3px solid white;
+  width: 820px;
+  position: relative;
+  top: -11px;
+  left: 960px;
+  background-color: #222;
+  
+}
+
+.tarihce-resim1 img {
+  width: 400px;
+  height: 664px;
+
+  
+}
+
+
+
+.japonyabaslik {
+  position: absolute;
+  top: 527px;
+  left: 368px;
+  color: orange;
+  font-size: 25px;
+}
+
+.asuka {
+  
+  position: absolute;
+  top: 260px;
+  right: 266px;
+  color: orange;
+  font-size: 27px;
+
+}
+
+
+
+
